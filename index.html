@@ -1,11 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>My GitHub Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberTronica</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: var(--bg); color: var(--text); transition: background 0.3s, color 0.3s; }
+    header { padding: 3rem 1rem; text-align: center; }
+    h1 { font-size: 2.5rem; margin: 0; }
+    h2 { color: #00ffd5; margin-bottom: 0.5rem; }
+    .subtitle { font-size: 1.2rem; opacity: 0.8; }
+    section { padding: 2rem 1rem; max-width: 900px; margin: auto; }
+    .skills, .portfolio, .experience { margin-top: 2rem; }
+    .skills-list, .portfolio-grid, .experience-list { list-style: none; padding: 0; }
+    .skills-list li, .experience-list li { padding: 0.4rem 0; border-bottom: 1px solid #1b2447; }
+    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .project { padding: 1rem; background: #111b3a; border-radius: 8px; }
+    .project h3 { margin: 0 0 0.4rem; color: #00ffd5; }
+    footer { padding: 2rem; text-align: center; font-size: 0.9rem; opacity: 0.6; }
+    a { color: #00ffd5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .btn { display: inline-block; padding: 0.6rem 1.2rem; border: 1px solid #00ffd5; border-radius: 5px; margin-top: 1rem; }
+  .skill-bar{margin:0.6rem 0;} .skill-bar span{font-size:0.9rem;display:block;margin-bottom:0.2rem;} .bar{background:#1b2447;border-radius:6px;overflow:hidden;height:10px;} .bar div{background:#00ffd5;height:100%;transition:width 1.5s ease;} .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;} .cert{padding:1rem;background:#111b3a;border-radius:8px;} .cert h3{margin:0 0 0.4rem;color:#00ffd5;} :root{--bg:#0a0f24;--text:#e8e8e8;--accent:#00ffd5;} .light-mode{--bg:#f5f5f5;--text:#0a0f24;} .fade-in{opacity:0;transform:translateY(20px);transition:all .8s ease;} .fade-in.show{opacity:1;transform:translateY(0);} </style>
 </head>
 <body>
-<h1>Hello from GitHub Pages!</h1>
-<p>This is my first website.</p>
+  <header>
+    <a href="https://www.linkedin.com/in/dimitri-verhoeven-34197555/" target="_blank" style="display:inline-block;">
+      <img src="https://raw.githubusercontent.com/DimiVtech/dimivtech.github.io/refs/heads/main/avatar.jpg" alt="Profile Picture" style="width:140px;height:140px;border-radius:50%;border:3px solid var(--accent);object-fit:cover;">
+    </a>
+    <h1>Dimitri Verhoeven</h1>
+    <p class="subtitle">Ethical Hacker • Cybersecurity Enthusiast • IT Professional</p>
+    <a class="btn" href="#contact">Contact Me</a>
+  </header>
+
+  <section class="fade-in" class="about">
+    <h2>About Me</h2>
+    <p>
+	I'm Dimitri Verhoeven, an information security enthusiast and bug bounty hunter who is passionate about hacking, programming, and sports. I spend my free time developing a reconnaissance framework for bug hunting, playing tennis or working around the house.
+	At the moment I'm working for Intigriti, a bug bounty platform, and also have a company Cybertronica, where I continue to hone my skills in bug bounty and consulting.
+	I'm always seeking new challenges and opportunities to improve my skills in the field.
+	</p>
+  </section>
+
+  <section class="fade-in" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-bar"><span>Web Security</span><div class="bar"><div style="width:95%"></div></div></div>
+	<div class="skill-bar"><span>Wireless Security</span><div class="bar"><div style="width:90%"></div></div></div>
+    <div class="skill-bar"><span>Network Security</span><div class="bar"><div style="width:80%"></div></div></div>
+    <div class="skill-bar"><span>Linux / Windows / Mac</span><div class="bar"><div style="width:75%"></div></div></div>
+    <div class="skill-bar"><span>Python / Bash / PowerShell</span><div class="bar"><div style="width:75%"></div></div></div>
+  </section>
+
+  <section class="fade-in" class="experience">
+    <h2>Work Experience</h2>
+    <ul class="experience-list">
+		<li><strong>Senior Security Analyst – Intigriti</strong> (November 2021 – September 2025)<br>After missing hands‑on hacking and wanting a more technical role, I joined Intigriti as a Security Analyst. I grew into a senior position where I trained triagers, handled advanced customer cases, and took on leadership responsibilities within the triage team.</li>
+		<li><strong>Hacker Manager – Intigriti</strong> (February 2021 – November 2021)<br>After a humorous Twitter post, Intigriti reached out and offered me a position as a Hacker Manager — a company I had long admired. I supported community growth, assisted hackers, and helped strengthen platform engagement and collaboration.</li>
+		<li><strong>Self‑Employed – CyberTronica</strong> (January 2020 – September 2025)<br>To pursue my dream in ethical hacking, I founded a security consultancy focused on network and wireless security. After one year, Intigriti approached me with an offer I couldn’t refuse.</li>
+		<li><strong>Senior Network Engineer – Exclusive Networks</strong> (January 2017 – October 2019)<br>After Exclusive Networks acquired Blue Vision Telecom, I was responsible for integrating both networks. I configured and deployed wireless systems and supported enterprise network environments.</li>
+		<li><strong>Network Engineer – Blue Vision Telecom</strong> (May 2010 – January 2017)<br>My cybersecurity journey began here. I built and maintained VPNs, performed wireless deployments and troubleshooting, and worked on R&D projects. This experience sparked and fueled my passion for ethical hacking and cybersecurity.</li>
+		<li><strong>Web Designer – Dixys</strong> (November 2009 – December 2009)<br>Early in my tech journey, I worked briefly as a Web Developer before realizing my true passion was in networking and cybersecurity.</li>
+    </ul>
+  </section>
+
+  <section class="fade-in" class="certificates">
+    <h2>Certificates</h2>
+    <div class="cert-grid">
+		<div class="cert" style="text-align:center;">
+			<img src="https://raw.githubusercontent.com/DimiVtech/dimivtech.github.io/refs/heads/main/burp.JPG" alt="Burp Certificate" style="width:100%;height:auto;max-height:180px;object-fit:contain;border-radius:6px;">
+			<h3>Burp Suite Certified Practitioner</h3>
+			<p>Portswigger - January 2023</p>
+		</div>
+		
+		<div class="cert" style="text-align:center;">
+			<img src="https://raw.githubusercontent.com/DimiVtech/dimivtech.github.io/refs/heads/main/oswp.JPG" alt="OSWP Certificate" style="width:100%;height:auto;max-height:180px;object-fit:contain;border-radius:6px;">
+			<h3>Offensive Security Wireless Professional</h3>
+			<p>Offensive Security - September 2020</p>
+		</div>
+
+    </div>
+  </section>
+
+  <section class="fade-in" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:info@cybertronica.be">info@cybertronica.be</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/dimitri-verhoeven-34197555/">https://www.linkedin.com/in/dimitri-verhoeven-34197555/</a></p>
+  </section>
+
+  <footer>
+    © 2025 Dimitri Verhoeven — Ethical Hacker & IT Specialist
+  </footer>
+<script>
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show');});});document.querySelectorAll('.fade-in').forEach(s=>obs.observe(s));
+const btn=document.getElementById('themeToggle');btn.onclick=()=>{document.body.classList.toggle('light-mode');};
+</script>
 </body>
 </html>
